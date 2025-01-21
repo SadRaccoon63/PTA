@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0; /* Background color for the body */
+    background-image: url(BG2.jpg); /* Replace with your image path */
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 120px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dorm-table {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.dorm-buttons {
+    display: grid; /* Use grid layout for easy arrangement */
+    grid-template-columns: repeat(8, 1fr); /* Create 8 equal columns */
+    gap: 10px; /* Add spacing between buttons */
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav .logo img {
+    height: 75px;
+    width: auto;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00bfa5; /* Highlight on hover */
+}
+
+nav li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #00bfa5;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+
+nav li:hover::after {
+    width: 100%;
+}
